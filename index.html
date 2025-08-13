@@ -5,17 +5,24 @@
         <title>Webpage Showcase</title>
     </head>
     <body>
+    <nav class="index">
+        <h3>Index</h3>
+        <a class=active href="#main-title">About Me</a>|
+        <a href="#my_hobbies">My Hobbies</a>|
+        <a href="#photo_gallary">Photo Gallary</a>|
+        <a href="#daily_schedule">Daily Schedule</a>
+    </nav>
         <h1 id="main-title">About Me</h1>
         <p>My name is Walker Cook and I am a Software Developer from Base Camp Coding Academy.
                     I am 18 Years old from Batesville, Mississippi. I enjoy sports such as MMA, football, baseball, boxing, and basketball.</p>
     </body>
-    <h1 id="card">My Hobbies</h1>
-    <ol>
+    <h1 id="my_hobbies">My Hobbies</h1>
+    <ol class="hobbies">
         <li>Working Out</li>
         <li>Boxing Training</li>
         <li>Video Games</li>
     </ol>
-    <h1>Photo Gallary</h1>
+    <h1 id="photo_gallary">Photo Gallary</h1>
     <div class="highlight">
     <img id="mj-image-img"
     src="images/Episode-304-Do-You-Know-Michael-Jordan.jpg"
@@ -32,19 +39,17 @@
     alt="Floyd vs Manny"
     width = "300"
     height = "300">
-    <h1>Links</h1>
+    <h1 class="links">Links</h1>
 
     <h5>External Link</h5>
         <a href="https://www.spiritworn.com/">Spirit Worn homepage</a>
     <h5>Internal Anchor Link:</h5>
-        <a href="#View_Hobbies">View My Hobbies</a>
+        <a href="#View_Hobbies">View My Hobbies</a> 
     </div>
-    <table>
-        <caption>
-            My Daily Schedule
-        </caption>
+    <table class="list">
+        <h1 id="daily_schedule" > My Daily Schedule</h1>
         <thread>
-            <tr class="list">
+            <tr>
                 <th scope="col">Monday</th>
                 <th scope="col">Tuesday</th>
                 <th scope="col">Wednesday</th>
@@ -54,7 +59,7 @@
                 <th scope="col">Sunday</th>
             </tr>
             <tbody>
-                <tr class="list">
+                <tr>
                     <th scope="row">Running, School & Boxing</th>
                     <td>Running, School & Boxing</td>
                     <td>School & Church</td>
