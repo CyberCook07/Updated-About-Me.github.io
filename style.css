@@ -1,100 +1,154 @@
-.web_headings{
-    color:navy;
-    text-align: center;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 5px;
+body {
+  font-family: system-ui, Arial, sans-serif;
+  text-align: center;
+  margin: 0;
+  padding: 0;
 }
-.highlight{
-    background-image: beige;
-    width: 150px;
-    padding: 5px;
-    margin-left: auto;
-    margin-right: auto;
-}
-#main-title{
-    background-color: beige;
-}
-#mj-image-img{
-    border-radius: 20px;
-    border-color: beige;
-    box-shadow: 20px
-}
-@media screen and (max-width: 600px){
-    .main_content{
-        background-color: navajowhite;
-    }
-    .web_headings{
-        font-size: 20px;
-    }
-    .bio{
-        font-size: 10px
-    }
-    .index{
-        display: flex;
-        flex-direction:column;
-        font-size: 20px;
-    }
-}
-.bio{
-    font-family: "regular";
-    text-align: center;
-    box-shadow: "5px";
-    background-color: beige;
-    color: navy;
-    box-shadow: 10px;
-}
-.list{
-    font-family: "regular";
-    padding: 5px;
-    margin-left: auto;
-    margin-right: auto;
-    font-family: "regular";
-    box-shadow: "5px";
-    background-color: beige;
-    color: navy;
-    box-shadow: 10px;
-}
-#card{
-    padding: 5px;
-    margin-left: auto;
-    margin-right: auto;
-    font-family: "regular";
-    text-align: center;
-    box-shadow: "5px";
-    background-color: beige;
-    color: navy;
-    box-shadow: 10px;
-}
-.hobbies{
-    padding: 5px;
-    margin-left: auto;
-    margin-right: auto;
-    font-family: "regular";
-    text-align: center;
-    box-shadow: "5px";
-    background-color: beige;
-    color: navy;
-    box-shadow: 10px;
-}
-.links{
-    margin-left: auto;
-    margin-right: auto;
-}
-.header_index{
-    background-color: beige;
-    overflow: hidden;
-    margin-left: auto;
-    margin-right: auto;
-    text-align: center;
-}
+
 .header_index {
-    color:red;
-    text-align: center;
-    padding: 14px 16px;
-    font-size: 17px
+  text-align: center;
+  background-color: beige;
+  padding: 20px;
+  font-size: 17px;
 }
-.active .hobby .photo .daily:hover{
-    background-color: navy;
-    color:red
+
+.index_title {
+  margin-bottom: 12px;
+  color: navy;
+}
+
+.nav_links {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.nav_item {
+  color: navy;
+  text-decoration: none;
+  padding: 8px 12px;
+  border-radius: 6px;
+  transition: 0.3s;
+}
+
+.nav_item:hover {
+  background-color: navy;
+  color: white;
+}
+
+.nav_item.active {
+  color: red;
+  font-weight: bold;
+}
+
+.web_headings {
+  color: navy;
+  text-align: center;
+  margin: 1rem auto .5rem;
+}
+
+.bio {
+  margin: 0 auto;
+  padding: 10px;
+  background-color: beige;
+  color: navy;
+  max-width: 600px;
+}
+
+.hobbies {
+  margin: 0 auto;
+  background-color: beige;
+  color: navy;
+  display: inline-block;
+  padding: 10px;
+}
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+  margin: 0 auto 1rem auto;
+}
+
+.gallery img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.links {
+  text-align: center;
+  color: navy;
+  margin: 20px 0;
+}
+
+.links_section {
+  text-align: center;
+  margin: 10px auto;
+}
+
+.links_section a {
+  display: inline-block;
+  margin: 8px 12px;
+  color: navy;
+  text-decoration: none;
+  font-size: 16px;
+  padding: 6px 10px;
+  border-radius: 6px;
+  transition: 0.3s;
+}
+
+.links_section a:hover {
+  background-color: navy;
+  color: white;
+}
+
+.list {
+  margin: 1rem auto;
+  width: 100%;
+  max-width: 900px;
+  border-collapse: collapse;
+  background-color: beige;
+  color: navy;
+}
+
+.list th, .list td {
+  padding: .6rem;
+  border: 1px solid #ddd;
+}
+
+.list thead th {
+  background: #f4f4f4;
+}
+
+@media (max-width: 600px) {
+  html {
+    font-size: 16px;
+  }
+  body {
+    line-height: 1.6;
+    padding: 0 12px;
+  }
+  .web_headings {
+    font-size: 1.4rem;
+  }
+  .bio, .hobbies {
+    font-size: 1rem;
+  }
+  .nav_links {
+    flex-direction: column;
+    align-items: center;
+    gap: .6rem;
+  }
+  .nav_item {
+    padding: 10px 12px;
+  }
+  .list {
+    font-size: .95rem;
+  }
+  .list th, .list td {
+    padding: .5rem;
+  }
 }
