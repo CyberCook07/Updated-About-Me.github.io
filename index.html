@@ -1,74 +1,77 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <link href="style.css" rel="stylesheet">
-        <title>Webpage Showcase</title>
-    </head>
-    <body class="main_content">
-    <nav class="header_index">
-        <h3>Index</h3>
-        <a class='active' href="#main-title">About Me</a>|
-        <a class="hobby" href="#my_hobbies">My Hobbies</a>|
-        <a class="photo" href="#photo_gallary">Photo Gallary</a>|
-        <a class="daily" href="#daily_schedule">Daily Schedule</a>
-    </nav>
-        <h1 class="web_headings" id="main-title">About Me</h1>
-        <p class="bio">My name is Walker Cook and I am a Software Developer from Base Camp Coding Academy.
-                    I am 18 Years old from Batesville, Mississippi. I enjoy sports such as MMA, football, baseball, boxing, and basketball.</p>
-    </body>
-    <h1 class="web_headings" id="my_hobbies">My Hobbies</h1>
-    <ol class="hobbies">
-        <li>Working Out</li>
-        <li>Boxing Training</li>
-        <li>Video Games</li>
-    </ol>
-    <h1 class="web_headings" id="photo_gallary">Photo Gallary</h1>
-    <div class="highlight">
-    <img id="mj-image-img"
-    src="images/Episode-304-Do-You-Know-Michael-Jordan.jpg"
-    alt="MJ Dunking"
-    width = "300"
-    height="300">
-    <img class="images2-img"
-    src="images/23mlb-nlcs-g5-harpersub-1-b281-videoSixteenByNine3000.jpg"
-    alt="Bryce Harper Home Run"
-    width = "300"
-    height="300">
-    <img class="image2-img"
-    src="images/Floyd-Mayweather-Jr-ducks-Philippines-Manny-Pacquiao-May-2-2015.jpg.webp" 
-    alt="Floyd vs Manny"
-    width = "300"
-    height = "300">
-    <h1 class="links">Links</h1>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Webpage Showcase</title>
+  <link href="style.css" rel="stylesheet">
+</head>
+<body class="main_content">
 
-    <h5>External Link</h5>
-        <a href="https://www.spiritworn.com/"target="_blank">Spirit Worn homepage</a>
-    <h5>Internal Anchor Link:</h5>
-        <a href="#my_hobbies">View My Hobbies</a> 
+  <nav class="header_index">
+    <h3 class="index_title">Index</h3>
+    <div class="nav_links">
+      <a class="nav_item active" href="#main-title">About Me</a>
+      <a class="nav_item" href="#my_hobbies">My Hobbies</a>
+      <a class="nav_item" href="#photo_gallery">Photo Gallery</a>
+      <a class="nav_item" href="#daily_schedule">Daily Schedule</a>
     </div>
-    <table class="list">
-        <h1 id="daily_schedule" > My Daily Schedule</h1>
-        <thread>
-            <tr>
-                <th scope="col">Monday</th>
-                <th scope="col">Tuesday</th>
-                <th scope="col">Wednesday</th>
-                <th scope="col">Thursday</th>
-                <th scope="col">Friday</th>
-                <th scope="col">Saturday</th>
-                <th scope="col">Sunday</th>
-            </tr>
-            <tbody>
-                <tr>
-                    <th scope="row">Running, School & Boxing</th>
-                    <td>Running, School & Boxing</td>
-                    <td>School & Church</td>
-                    <td>School, Boxing, Working Out</td>
-                    <td>School, Rest</td>
-                    <td>Running, Rest</td>
-                    <td>Church</td>
-                </tr>
-            </tbody>
-        </thread>
-    </table>
+  </nav>
+
+  <h1 class="web_headings" id="main-title">About Me</h1>
+  <p class="bio">
+    My name is Walker Cook and I am a Software Developer from Base Camp Coding Academy.
+    I am 18 years old from Batesville, Mississippi. I enjoy sports such as MMA, football,
+    baseball, boxing, and basketball.
+  </p>
+
+  <h1 class="web_headings" id="my_hobbies">My Hobbies</h1>
+  <ol class="hobbies">
+    <li>Working Out</li>
+    <li>Boxing Training</li>
+    <li>Video Games</li>
+  </ol>
+
+  <h1 class="web_headings" id="photo_gallery">Photo Gallery</h1>
+  <div class="gallery">
+    <img src="images/Episode-304-Do-You-Know-Michael-Jordan.jpg" alt="Michael Jordan dunking" width="300" height="300">
+    <img src="images/23mlb-nlcs-g5-harpersub-1-b281-videoSixteenByNine3000.jpg" alt="Bryce Harper home run" width="300" height="300">
+    <img src="images/Floyd-Mayweather-Jr-ducks-Philippines-Manny-Pacquiao-May-2-2015.jpg.webp" alt="Floyd vs Manny" width="300" height="300">
+  </div>
+
+  <h1 class="links">Links</h1>
+  <div class="links_section">
+    <h5>External Link</h5>
+    <a href="https://www.spiritworn.com/" target="_blank">Spirit Worn homepage</a>
+    <h5>Internal Anchor Link</h5>
+    <a href="#my_hobbies">View My Hobbies</a>
+  </div>
+
+  <h1 class="web_headings" id="daily_schedule">My Daily Schedule</h1>
+  <table class="list">
+    <thead>
+      <tr>
+        <th>Monday</th>
+        <th>Tuesday</th>
+        <th>Wednesday</th>
+        <th>Thursday</th>
+        <th>Friday</th>
+        <th>Saturday</th>
+        <th>Sunday</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Running, School & Boxing</td>
+        <td>Running, School & Boxing</td>
+        <td>School & Church</td>
+        <td>School, Boxing, Working Out</td>
+        <td>School, Rest</td>
+        <td>Running, Rest</td>
+        <td>Church</td>
+      </tr>
+    </tbody>
+  </table>
+
+</body>
 </html>
