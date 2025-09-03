@@ -1,4 +1,4 @@
-body {
+.content {
   font-family: system-ui, Arial, sans-serif;
   text-align: center;
   margin: 0;
@@ -53,6 +53,20 @@ body {
   background-color: beige;
   color: navy;
   max-width: 600px;
+}
+
+.main_content {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 2rem;
+  margin: 2rem auto;
+  max-width: 1200px;
+  flex-wrap: wrap;
+}
+
+.hobbies_section, .gallery_section {
+  flex: 1 1 45%;
 }
 
 .hobbies {
@@ -127,7 +141,7 @@ body {
   html {
     font-size: 16px;
   }
-  body {
+ .content {
     line-height: 1.6;
     padding: 0 12px;
   }
